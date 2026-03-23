@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Form Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Create Form</h1>
+
+<input id="title" placeholder="Form Title">
+
+<br>
+
+<textarea id="description" placeholder="Form Description"></textarea>
+<h3>Add Question</h3>
+
+<input id="questionText" placeholder="Question">
+
+<select id="questionType">
+<option value="text">Short Answer</option>
+<option value="multiple">Multiple Choice</option>
+<option value="checkbox">Checkboxes</option>
+<option value="dropdown">Dropdown</option>
+<option value="emoji">Emoji Feedback</option>
+</select>
+
+<input id="options" placeholder="Options (comma separated)">
+
+<button onclick="addQuestion()">Add Question</button>
+
+<h3>Questions</h3>
+
+<ul id="questionList"></ul>
+
+<button onclick="createForm()">Create Form</button>
+<div id="formLink"></div>
+<p id="link"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
